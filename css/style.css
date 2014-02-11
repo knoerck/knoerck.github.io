@@ -1,0 +1,152 @@
+/*  basierend auf:
+    http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+/*  BODY MIT HINTERGRUND-FOTO */
+
+body {
+    background-color: #75ae3d;
+    line-height: 1;
+    font-size: 62.5%; /* BASIS-GROESSE (62,5% = 10PX) */
+    }
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    }
+
+h1, h2 {
+    color: #000;
+    font-family: "Yanone Kaffeesatz", "Arial Narrow", Sans-Serif;
+    font-weight: 200;
+    padding: 0 5%;
+    text-shadow: 1px 1px 0 #333;
+    }
+
+h1 {
+    font-size: 700%; /* IN BEZUG AUF BASIS-GROESSE (700% = 70PX) */
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 30px 0 10px 0;
+    word-wrap: break-word;
+    }
+
+h2 {
+    font-size: 360%;
+    letter-spacing: 1px;
+    }
+
+/*  INFO-BOX */
+
+#info {
+    .position: relative;
+    width: 450px;
+    color: #000;
+    font-family: Georgia, Cambria, "Times New Roman", Serif;
+    font-size: 220%;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 0 #999;
+    margin: 30px 5% 20px 5%;
+    .z-index: 1;
+    float: left;
+    background: url('../images/bg_innung.jpg') no-repeat top;
+    }
+
+#info p {
+    margin: 10px 0;
+    }
+
+#info ul, info li {
+    margin-left: 5%;
+    padding-left: 0;
+    }
+
+#info a {
+    color: #ECCFAE;
+    transition: color .2s ease;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    }
+
+#info a:hover {
+    color: #FFF;
+    }
+
+#info img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 0 0;
+    }
+
+/*  SOCIAL-WEB-LINKS */
+
+#bilder {
+    margin: 30px 5% 20px 5%;
+}
+
+#bilder img {
+    margin: 2px 1px;
+    padding: 1px 1px;
+    border: 1px solid #333;
+    background-color: #000;
+}
+
+/* Footer */
+
+#footer {
+    color: #000;
+    font-family: "Times New Roman", Serif;
+    font-size: 150%;
+    margin: 20px 5% 0px 5%;
+    z-index: 1;
+    }
+
+#footer p {
+    margin: 0 10px;
+    }
+
+
+/*  OPTIMIERUNG FUER KLEINE BILDSCHIRME, AM
+    BEISPIEL DES IPHONE: */
+
+@media only screen
+    and (min-width : 320px)
+    and (max-width : 568px) {
+
+    #logo {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        text-align: left;
+        margin: 30px 5% 5% 5%;
+        }
+    }
